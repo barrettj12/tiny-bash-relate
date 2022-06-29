@@ -1,11 +1,13 @@
-name: tiny-bash
-summary: This charm is so small. Its tiny.
-maintainer: Erik Lonroth <erik.lonroth@gmail.com>
+name: tiny-bash-relate
+summary: erik78se's tiny-bash charm with a relation.
+maintainer: Jordan Barrett <jordan.barrett@canonical.com>
 series: ["bionic", "focal"]
-description: |
-  This charm is a tiny hooks-only charm. It does nothing.
-tags:
-  - misc
+description: erik78se's tiny-bash charm with a relation.
 subordinate: false
 
-docs: https://github.com/erik78se/tiny-bash/README.md
+provides:
+  prov:
+    interface: tiny-bash-relate
+requires:
+  req:
+    interface: tiny-bash-relate
